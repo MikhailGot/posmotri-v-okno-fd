@@ -210,10 +210,14 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   height: 386px;
   width: 711px;
-
   margin-bottom: 16px;
+}
+
+.content__list-container {
+  position: relative;
 }
 
 .result__video-container video {
