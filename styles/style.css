@@ -151,7 +151,7 @@ ol {
 
 .search-form__label:hover {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
 .search-form__label:has(:focus-visible) {
@@ -188,6 +188,7 @@ ol {
 
 .more-button {
   width: 100%;
+  min-height: 34px;
 }
 
 .content__list-container {
