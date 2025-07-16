@@ -127,6 +127,7 @@ ol {
   padding: 1px;
   width: 19px;
   height: 19px;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -149,7 +150,7 @@ ol {
   padding: 1px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   cursor: pointer;
   text-decoration: underline; 
 }
@@ -160,7 +161,6 @@ ol {
 
 .search-form__submit-button {
     min-width: 194px;
-    min-height: 34px;
     align-self: flex-end;
 }
 
@@ -171,6 +171,7 @@ ol {
   color:white;
   font-family: inherit;
   font-size: inherit;
+  min-height: 34px;
 }
 
 .button:active {
@@ -188,13 +189,18 @@ ol {
 
 .more-button {
   width: 100%;
-  min-height: 34px;
+
 }
 
 .content__list-container {
   height: 298px;
   overflow-y: scroll;
   padding: 2px;
+  position: relative;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -224,10 +230,6 @@ ol {
   width: 711px;
 }
 
-.content__list-container {
-  position: relative;
-}
-
 .result__video {
   height: 100%;
   width: 100%;
@@ -236,9 +238,6 @@ ol {
 
 .content__details {
  flex: 1 1 399px; 
-}
-.content__video-card {
-  display:flex;
 }
 
 .content__card-link {
@@ -258,15 +257,22 @@ ol {
 .content__card-link:focus-visible {
   outline: 1px solid white;
 }
+
+.content__video-card {
+  display:flex;
+  height: 103px;
+}
+
 .content__video-card-thumbnail {
   display: block;
   flex: 0 0 194px;
-  height: 103px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .content__video-card-description-container {
-  flex: 1 1 196px;
+  flex: 0 0 196px;
+  height: 103px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -282,8 +288,4 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.content__list-item {
-  margin-bottom: 30px;
 }
