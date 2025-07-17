@@ -19,6 +19,9 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   width: 100%;
+  min-width: 1140px;
+  min-height: 534px;
+  margin: 0;
 }
 
 h1,
